@@ -1,0 +1,65 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#portNav {
+	height: 5vh;
+	width: 100vw;
+	position: fixed;
+	background-color: #2d3047;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+#portMain {
+	background-image: url('../images/pexels-photo-379600.jpeg');
+	min-height: 100vh;
+}
+
+#portLrnd {
+	min-height: 100vh;
+	background-image: url('../images/pexels-photo-360912.jpeg');
+}
+
+#portPrjct {
+	background-image: url('../images/aleks-dahlberg-274646.jpg');
+	min-height: 100vh;
+}
+
+#portCntct {
+	background-image: url('../images/raphael-koh-259721.jpg');
+	min-height: 100vh;
+}
+
+#portMain, #portLrnd, #portPrjct, #portCntct {
+ 	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	background-attachment: fixed;
+}
+
+.name, .title {
+	color: white;
+}
+
+.name {
+	font-size: 30px;
+}
+
+.title {
+	font-size: 20px;
+}
+
+#personalInfo {
+	position: absolute;
+	text-align: center;
+	width: 100vw;
+	background: transparent;
+	top: 50%;
+	left: 0;
+}

@@ -1,0 +1,31 @@
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax_layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*padding: 100vh 0;*/
+}
+.parallax_base {
+  transform: translateZ(0);
+}
+.parallax_back {
+  transform: translateZ(-1px) scale(2);
+  background-image: url('../images/pexels-photo-379600.jpeg');
+  background-position: center;
+  background-origin: left bottom;
+  background-repeat: no-repeat;
+}
+
+.title{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+}
