@@ -2,7 +2,76 @@ html, body {
 	height: 100%;
 	width: 100%;
 	padding: 0;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
+}
+
+
+.bg1 {
+	z-index: 2;
+ 	/*background-position: center;*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	background-image: url('../images/pexels-photo-360912.jpeg');
+	background-attachment: fixed;
+}
+
+.diamond-main {
+	position: relative;
+	/*border-radius: 50%;*/
+	transform: rotate(45deg);
+	margin: auto;
+	height: 0px;
+	width: 50%;
+	padding: 25%;
+	/*top: 0px;*/
+	/*left: 25%;*/
+	overflow: hidden;
+}
+
+.diamond-in {
+	transform: rotate(-45deg);
+	position: absolute;
+}
+
+.pos2 {
+	background-position: 27px 0%;
+	width: 17%;
+	height: 25%;
+	top: 158px;
+	left: 25%;
+}
+
+.pos1 {
+	background-position: 147px -34%;
+	top: 371px;
+	left: 13%;
+	width: 22%;
+	height: 25%;
+}
+
+.pos3 {
+	background-position: center;
+	top: 0;
+	left: 39%;
+	width: 22%;
+	height: 25%;
+}
+
+.pos4 {
+	background-position-y: 100%;
+	top: -158px;
+	right: 25%;
+	width: 17%;
+	height: 25%;
+}
+
+.pos5 {
+	background-position-y: 144%;
+	top: -371px;
+	right: 13%;
+	width: 22%;
+	height: 25%;
 }
 
 #portNav {
@@ -16,35 +85,27 @@ html, body {
 }
 
 #portMain {
-	background-image: url('../images/pexels-photo-379600.jpeg');
 	min-height: 100vh;
+	overflow: hidden;
+	display: inline-block;
 }
 
 #portLrnd {
 	min-height: 100vh;
-	background-image: url('../images/pexels-photo-360912.jpeg');
 }
 
 #portPrjct {
-	background-image: url('../images/aleks-dahlberg-274646.jpg');
 	min-height: 100vh;
 }
 
 #portCntct {
-	background-image: url('../images/raphael-koh-259721.jpg');
 	min-height: 100vh;
-}
-
-#portMain, #portLrnd, #portPrjct, #portCntct {
- 	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 100vh;
-	background-attachment: fixed;
 }
 
 .name, .title {
 	color: white;
+	font-family: 'Permanent Marker', cursive;
+	text-shadow: 0px 0px 5px #333;	
 }
 
 .name {
@@ -60,6 +121,6 @@ html, body {
 	text-align: center;
 	width: 100vw;
 	background: transparent;
-	top: 50%;
+	top: 75%;
 	left: 0;
 }
