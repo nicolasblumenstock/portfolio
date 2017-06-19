@@ -5,75 +5,6 @@ html, body {
 	/*overflow-x: hidden;*/
 }
 
-
-.bg1 {
-	z-index: 2;
- 	/*background-position: center;*/
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 100vh;
-	background-image: url('../images/pexels-photo-360912.jpeg');
-	background-attachment: fixed;
-}
-
-.diamond-main {
-	position: relative;
-	/*border-radius: 50%;*/
-	transform: rotate(45deg);
-	margin: auto;
-	height: 0px;
-	width: 50%;
-	padding: 25%;
-	/*top: 0px;*/
-	/*left: 25%;*/
-	overflow: hidden;
-}
-
-.diamond-in {
-	transform: rotate(-45deg);
-	position: absolute;
-}
-
-.pos2 {
-	background-position: 27px 0%;
-	width: 17%;
-	height: 25%;
-	top: 158px;
-	left: 25%;
-}
-
-.pos1 {
-	background-position: 147px -34%;
-	top: 371px;
-	left: 13%;
-	width: 22%;
-	height: 25%;
-}
-
-.pos3 {
-	background-position: center;
-	top: 0;
-	left: 39%;
-	width: 22%;
-	height: 25%;
-}
-
-.pos4 {
-	background-position-y: 100%;
-	top: -158px;
-	right: 25%;
-	width: 17%;
-	height: 25%;
-}
-
-.pos5 {
-	background-position-y: 144%;
-	top: -371px;
-	right: 13%;
-	width: 22%;
-	height: 25%;
-}
-
 #portNav {
 	height: 5vh;
 	width: 100vw;
@@ -88,32 +19,53 @@ html, body {
 	min-height: 100vh;
 	overflow: hidden;
 	display: inline-block;
+	margin-top: 25px;
 }
 
-#portLrnd {
-	min-height: 100vh;
+.diamond{
+	height: 66vh;
+	transform: rotate(45deg);
+	top: 17vh;
 }
 
-#portPrjct {
-	min-height: 100vh;
+.diamondbg{
+	background: url('../images/aleks-dahlberg-274646.jpg');	
+	background-position: center;
+	background-attachment: fixed;
 }
 
-#portCntct {
-	min-height: 100vh;
+.bg {
+	transform: rotate(-45deg);
 }
 
+.test1 {
+	border: 5px solid #2d3047;	
+	background-color: white;	
+	height: 200px;
+}
+.test2 {
+	border: 5px solid #EF8B61;
+	background-color: ;
+	height: 200px;
+	z-index: 2;
+}
+.test3{
+	border: 5px solid #2d3047;	
+	background-color: white;	
+	height: 200px;
+}
 .name, .title {
-	color: white;
+	color: #EF8B61;
 	font-family: 'Permanent Marker', cursive;
 	text-shadow: 0px 0px 5px #333;	
 }
 
 .name {
-	font-size: 30px;
+	font-size: 2.75em;
 }
 
 .title {
-	font-size: 20px;
+	font-size: 1.75em;
 }
 
 #personalInfo {
@@ -121,6 +73,115 @@ html, body {
 	text-align: center;
 	width: 100vw;
 	background: transparent;
-	top: 75%;
+	top: 47vh;
 	left: 0;
+}
+
+#portLrnd {
+	min-height: 95vh;
+}
+
+.known {
+	height: 95vh;
+}
+
+@media (max-width: 767px) {
+	.known { height: 45vh; }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.known { height: 45vh; }
+}
+
+.learn {
+	height: 95vh;
+}
+@media (max-width: 767px) {
+	.learn { height: 45vh; }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.learn { height: 45vh; }
+}
+.known h2, .learn h2 {
+	font-family: 'Play', sans-serif;
+	text-decoration: underline;
+}
+
+.icons {
+	font-size: 100px;
+}
+
+@media (max-height: 768px){
+	.icons { font-size: 75px; }
+}
+
+#portPrjct {
+	min-height: 95vh;
+}
+
+.project {
+	height: 95vh;
+	padding: 0;
+}
+@media (max-width: 767px) {
+	.project { height: 23vh; }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.project { height: 23vh; }
+}
+
+.bg1{
+	background: url('../images/food-salad-healthy-colorful.jpg');
+	background-position: -212px 0px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.prj{
+	width: 100%;
+	height: 100%;
+	background: rgba(51,51,51,.6);
+	transition: all ease .5s;
+}
+
+.prj:hover {
+	border-left: 10px solid rgba(239,139,97,.6);
+}
+
+.prjTitle{
+	font-size: 3em;
+	font-family: 'Play', serif;
+	color: white;
+	text-shadow: 0px 0px 3px black;
+	text-align: center;
+}
+.bg2{
+	background: url('../images/pexels-photo-164703.jpeg');
+	background-position: -450px 0px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg3{
+	background: url('../images/pexels-photo-270404.jpeg');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg4{
+	background: url('../images/pexels-photo-92904.jpeg');
+	background-position: 0px 0px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+#portCntct {
+	background-color: #cfd2b2;
+	min-height: 95vh;
 }
